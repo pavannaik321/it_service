@@ -12,14 +12,18 @@ export default function About() {
 <Header />
 
       {/* Hero Section */}
-      <section className="relative text-center text-white bg-blue-900 py-32 mt-16">
-        <h2 className="text-4xl font-bold">About Us</h2>
-        <p className="mt-2">Home &nbsp; ● &nbsp; About Us</p>
-      </section>
+      <section className="relative text-center text-white bg-blue-900 py-24"
+  style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "20px 20px" }}>
+  <div className="container mx-auto">
+    <h2 className="text-5xl font-extrabold tracking-wide animate-fade-in">Who We Are</h2>
+    <p className="mt-4 text-lg text-gray-200">Discover our journey, values, and mission</p>
+  </div>
+</section>
+
 
       {/* About Us Section */}
       <section className="py-16 container mx-auto px-6">
-        <h3 className="text-3xl font-bold text-center">The Best IT Solution With 10+ Years of Experience Developers</h3>
+        <h3 className="text-3xl font-bold text-center">The Best IT Solution With 7+ Years of Experience Developers</h3>
         <div className="mt-8 flex justify-between flex-col md:flex-row items-center">
           <div className="md:w-1/2">
             <p className="text-gray-700">
@@ -44,8 +48,8 @@ export default function About() {
           <h3 className="text-3xl font-bold">Meet Our Expert Team</h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Pavan Naik", role: "Engineer", img: "/images/pavan.jpg" },
-              { name: "Shashwat Rane", role: "Developer", img: "/images/shashwat.png" },
+              { name: "Pavan Naik", role: "Developer", img: "/images/pavan.jpg" },
+              { name: "Shashwat", role: "Developer", img: "/images/shashwat.png" },
               { name: "Suprit Joshi", role: "Digital Marketing", img: "/images/suprit.png" }
             ].map((member, index) => (
               <div key={index} className="p-6 bg-white shadow-lg rounded-lg text-center">

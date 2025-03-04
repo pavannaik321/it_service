@@ -12,10 +12,16 @@ export default function Services() {
 <Header/>
 
       {/* Hero Section */}
-      <section className="relative text-center text-white bg-blue-900 py-32 mt-16">
-        <h2 className="text-4xl font-bold">Our Services</h2>
-        <p className="mt-2">Home &nbsp; ● &nbsp; Services</p>
-      </section>
+      <section className="relative text-center text-white bg-blue-900 py-24"
+  style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "20px 20px" }}>
+  <div className="container mx-auto">
+    <h2 className="text-5xl font-extrabold tracking-wide animate-fade-in">Our Services</h2>
+    <p className="mt-4 text-lg text-gray-200">Explore our expertise in Website Development, UI/UX, Digital Marketing, and App Development</p>
+  </div>
+</section>
+
+
+
 
       {/* Services Section */}
       <section className="py-16 container mx-auto px-6">
@@ -45,11 +51,13 @@ export default function Services() {
       {/* Testimonials */}
       <section className="bg-gray-100 py-16 text-center">
         <h3 className="text-3xl font-bold">What Our Clients Say About Our Digital Services</h3>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
           {[
-            { name: "Michael Anderson", role: "Professor", feedback: "The IT solutions provided helped my institution stay secure and efficient." },
-            { name: "Emily Davis", role: "Business Woman", feedback: "The web development team created a fantastic e-commerce platform for my business!" },
-            { name: "James Wilson", role: "Application Developer", feedback: "Their cybersecurity solutions are top-notch and reliable." }
+            { name: "Michael Anderson", role: "Student", feedback: "The IT solutions provided helped my institution stay secure and efficient." },
+            { name: "Emily Davis", role: "Hairwayon CEO", feedback: "The web development team created a fantastic e-commerce platform for my business!" },
+            { name: "James Wilson", role: "Student", feedback: "Their cybersecurity solutions are top-notch and reliable." },
+            { name: "James Wilson", role: "CradelWing CTO", feedback: "Their cybersecurity solutions are top-notch and reliable." },
+            { name: "James Wilson", role: "Konkan Specials CTO", feedback: "Their cybersecurity solutions are top-notch and reliable." },
           ].map((client, index) => (
             <div key={index} className="p-6 bg-white shadow-lg rounded-lg text-left">
               <h4 className="text-lg font-semibold">{client.name}</h4>

@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* About Us */}
       <section className="py-16 container mx-auto px-6">
-        <h3 className="text-3xl font-bold text-center">The Best IT Solution With 10+ Years of Experience Developers</h3>
+        <h3 className="text-3xl font-bold text-center">The Best IT Solution With 7+ Years of Experience Developers</h3>
         <div className="mt-8 flex flex-col md:flex-row items-center">
           <img src="/images/about.jpg" alt="About Us" className="w-full md:w-1/3 rounded-lg shadow-lg"/>
           <div className="md:ml-10 mt-6 md:mt-0">
@@ -55,7 +55,12 @@ export default function Home() {
     { title: "Website Development", desc: "Custom websites built for performance, security, and scalability." },
     { title: "UI/UX Design", desc: "Beautiful, user-friendly designs that enhance user experience." },
     { title: "Digital Marketing", desc: "SEO, social media marketing, and paid ads to grow your business." },
-    { title: "App Development", desc: "Native and hybrid mobile apps for Android and iOS platforms." }
+    { title: "App Development", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
+    { title: "Serverless Integrations", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
+    { title: "3D Modeling Blender", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
+    { title: "Clean Code Re-Factoring", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
+    { title: "Content Creation", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
+    
   ].map((service, index) => (
     <div key={index} className="p-6 bg-white shadow-lg rounded-lg text-center">
       <h4 className="text-xl font-semibold ">{service.title}</h4>

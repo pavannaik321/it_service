@@ -14,10 +14,14 @@ export default function Pricing() {
 <Header/>
 
       {/* Hero Section */}
-      <section className="relative text-center text-white bg-blue-900 py-32 mt-16">
-        <h2 className="text-4xl font-bold">Pricing Plans</h2>
-        <p className="mt-2">Home &nbsp; ● &nbsp; Pricing</p>
-      </section>
+      <section className="relative text-center text-white bg-blue-900 py-24"
+  style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "20px 20px" }}>
+  <div className="container mx-auto">
+    <h2 className="text-5xl font-extrabold tracking-wide animate-fade-in">Pricing Plans</h2>
+    <p className="mt-4 text-lg text-gray-200">Flexible and transparent pricing for businesses of all sizes</p>
+  </div>
+</section>
+
 
       {/* Pricing Section */}
       <section className="py-16 container mx-auto px-6">

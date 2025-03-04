@@ -12,10 +12,14 @@ export default function Contact() {
 <Header/>
 
       {/* Hero Section */}
-      <section className="relative text-center text-white bg-blue-900 py-32 mt-16">
-        <h2 className="text-4xl font-bold">Contact Us</h2>
-        <p className="mt-2">Home &nbsp; ● &nbsp; Contact Us</p>
-      </section>
+      <section className="relative text-center text-white bg-blue-900 py-24"
+  style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "20px 20px" }}>
+  <div className="container mx-auto">
+    <h2 className="text-5xl font-extrabold tracking-wide animate-fade-in">Contact Us</h2>
+    <p className="mt-4 text-lg text-gray-200">Have any questions? Feel free to reach out to us</p>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section className="py-16 container mx-auto px-6">
