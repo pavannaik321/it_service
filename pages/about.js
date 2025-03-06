@@ -111,7 +111,7 @@ export default function About() {
       {/* Team Members */}
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto text-center">
-          <h3 className="text-3xl font-bold">Meet Our Team</h3>
+          <h3 className="text-3xl font-bold">Meet Our Team.</h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { name: "Pavan Naik", role: "Developer", img: "/images/pavan.jpg" },
