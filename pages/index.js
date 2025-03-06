@@ -22,7 +22,7 @@ export default function Home() {
     <div className="mt-6 flex justify-center space-x-4">
     <button 
   className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700"
-  onClick={() => window.location.href = '/contact'}
+  onClick={() => window.location.href = '/pricing'}
 >
   Free Quote
 </button>
@@ -66,15 +66,20 @@ export default function Home() {
           <h3 className="text-3xl font-bold">Custom IT Solutions for Your Business</h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
   {[
-    { title: "Website Development", desc: "Custom websites built for performance, security, and scalability." },
-    { title: "UI/UX Design", desc: "Beautiful, user-friendly designs that enhance user experience." },
-    { title: "Digital Marketing", desc: "SEO, social media marketing, and paid ads to grow your business." },
-    { title: "App Development", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
-    { title: "Serverless Integrations", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
-    { title: "3D Modeling Blender", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
-    { title: "Clean Code Re-Factoring", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
-    { title: "Content Creation", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
-    
+
+
+   { title: "Website Development", desc: "Custom websites built for performance, security, and scalability." },
+   { title: "UI/UX Design", desc: "Beautiful, user-friendly designs that enhance user experience." },
+   { title: "Digital Marketing", desc: "SEO, social media marketing, and paid ads to grow your business." },
+   { title: "App Development", desc: "Native and hybrid mobile apps for Android and iOS platforms." },
+   { title: "Serverless Integrations", desc: "Seamless integration of cloud-based services for scalability and efficiency." },
+   { title: "3D Modeling Blender", desc: "High-quality 3D models and animations using Blender for various applications." },
+   { title: "Clean Code Re-Factoring", desc: "Optimizing and restructuring code to improve maintainability and efficiency." },
+   { title: "Content Creation", desc: "Engaging and high-quality content for websites, blogs, and social media." }
+
+
+
+
   ].map((service, index) => (
     <div key={index} className="p-6 bg-white shadow-lg rounded-lg text-center">
       <h4 className="text-xl font-semibold ">{service.title}</h4>
@@ -87,22 +92,52 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section className="py-16 container mx-auto">
-        <h3 className="text-3xl font-bold text-center">Competitive Pricing Plans</h3>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            { name: "Startup Plan", price: "8k" },
-            { name: "Growth Plan", price: "16k" },
-            { name: "Enterprise Plan", price: "28k" }
-          ].map((plan, index) => (
-            <div key={index} className="p-6 bg-white shadow-lg rounded-lg text-center">
-              <h4 className="text-xl font-semibold">{plan.name}</h4>
-              <p className="text-2xl font-bold text-blue-600 mt-2">{plan.price}</p>
-              <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700" onClick={() => window.location.href = '/pricing'}>Choose Plan</button>
-            </div>
-          ))}
+      <section className="py-16 bg-gray-100">
+  <div className="container mx-auto px-6">
+    {/* Section Heading */}
+    <h3 className="text-4xl font-bold text-center text-gray-900">
+      Competitive Pricing Plans
+    </h3>
+
+    {/* Pricing Cards */}
+    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        { name: "Startup Plan", price: "₹8,000", features: ["Basic Website", "1-Month Support", "SEO Optimization"] },
+        { name: "Growth Plan", price: "₹16,000", features: ["E-commerce Support", "Custom Design", "3-Month Support"] },
+        { name: "Enterprise Plan", price: "₹28,000", features: ["Full Customization", "Mobile App", "6-Month Support"] }
+      ].map((plan, index) => (
+        <div 
+          key={index} 
+          className="p-8 bg-white shadow-xl rounded-xl border border-gray-200 text-center transition-transform duration-300 hover:scale-105"
+        >
+          {/* Plan Name */}
+          <h4 className="text-2xl font-semibold text-gray-900">{plan.name}</h4>
+
+          {/* Plan Price */}
+          <p className="text-4xl font-extrabold text-blue-600 mt-4">{plan.price}</p>
+
+          {/* Features */}
+          <ul className="mt-6 space-y-3 text-gray-600">
+            {plan.features.map((feature, i) => (
+              <li key={i} className="flex items-center justify-center">
+                <span className="text-green-600 mr-2">✔</span> {feature}
+              </li>
+            ))}
+          </ul>
+
+          {/* Button */}
+          <button 
+            className="mt-6 px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300"
+            onClick={() => window.location.href = '/pricing'}
+          >
+            Choose Plan
+          </button>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Contact */}
       <section className="bg-gray-100 py-16 text-center">

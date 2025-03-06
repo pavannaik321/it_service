@@ -114,12 +114,18 @@ export default function About() {
           <h3 className="text-3xl font-bold">Meet Our Team.</h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
+              { name: "Addhitya S", role: "Developer", img: "/images/aditya.jpeg" },
               { name: "Pavan Naik", role: "Developer", img: "/images/pavan.jpg" },
               { name: "Shashwat", role: "Developer", img: "/images/shashwat.png" },
               { name: "Suprit Joshi", role: "Digital Marketing", img: "/images/suprit.png" }
             ].map((member, index) => (
               <div key={index} className="p-6 bg-white shadow-lg rounded-lg text-center">
-                <img src={member.img} alt={member.name} className="mx-auto rounded-full w-20 h-20 mb-4"/>
+                <img 
+  src={member.img} 
+  alt={member.name} 
+  className="mx-auto rounded-full w-20 h-20 mb-4 object-cover aspect-square"
+/>
+
                 <h4 className="text-xl font-semibold">{member.name}</h4>
                 <p className="text-gray-600">{member.role}</p>
               </div>
@@ -130,7 +136,7 @@ export default function About() {
 
       {/* Partner Logos */}
       <section className="py-12 text-center">
-        <h3 className="text-xl font-semibold">Our Trusted Partners</h3>
+        <h3 className="text-3xl font-bold">Our Trusted Partners</h3>
         <div className="flex justify-center flex-wrap gap-6 mt-6">
           {["Hairwayon", "Cradel Wing", "Konkan Specials"].map((partner, index) => (
             // <img key={index} src={`/${partner}.png`} alt={partner} className="h-10 grayscale hover:grayscale-0 transition"/>

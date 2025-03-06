@@ -34,7 +34,7 @@ export default function Contact() {
               <i className="fas fa-phone text-2xl"></i>
             </div>
             <h4 className="text-xl font-semibold mt-4">Call to ask any question</h4>
-            <p className="text-blue-600 font-semibold mt-2">+91 1122334455</p>
+            <p className="text-blue-600 font-semibold mt-2">+91 9113909285</p>
           </div>
 
           {/* Email */}
@@ -43,7 +43,7 @@ export default function Contact() {
               <i className="fas fa-envelope text-2xl"></i>
             </div>
             <h4 className="text-xl font-semibold mt-4">Email to get free quote</h4>
-            <p className="text-blue-600 font-semibold mt-2">mail@domain.com</p>
+            <p className="text-blue-600 font-semibold mt-2">pavanpnaik321@gmail.com</p>
           </div>
 
           {/* Address */}
@@ -52,7 +52,7 @@ export default function Contact() {
               <i className="fas fa-map-marker-alt text-2xl"></i>
             </div>
             <h4 className="text-xl font-semibold mt-4">Visit Our Office</h4>
-            <p className="text-blue-600 font-semibold mt-2">123 Street, NY, USA</p>
+            <p className="text-blue-600 font-semibold mt-2">VIT Incubator, Vellore, Tamil Nadu</p>
           </div>
         </div>
 
@@ -73,15 +73,16 @@ export default function Contact() {
 
           {/* Google Map */}
           <div className="shadow-lg rounded-lg overflow-hidden border border-gray-200">
-            <iframe
-              width="100%"
-              height="100%"
-              style={{ minHeight: "300px" }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093714!2d144.9559283153153!3d-37.81720997975151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sVictoria!5e0!3m2!1sen!2sus!4v1632927382899!5m2!1sen!2sus">
-            </iframe>
+          <iframe
+  width="100%"
+  height="100%"
+  style={{ minHeight: "300px", border: "0" }}
+  loading="lazy"
+  allowFullScreen
+  referrerPolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0410799818246!2d79.15335867546062!3d12.969223187345916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1741261673376!5m2!1sen!2sin">
+</iframe>
+
           </div>
         </div>
       </section>
