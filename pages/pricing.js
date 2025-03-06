@@ -1,6 +1,7 @@
 import Head from "next/head";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 export default function Pricing() {
@@ -75,7 +76,7 @@ export default function Pricing() {
   </ul>
 
   <p className="text-gray-700 mt-4 text-start">
-    Please provide details about the product or service you're interested in, any specific requirements, and other relevant information to help us generate an accurate quote.
+    Please provide details about the product or service you are interested in, any specific requirements, and other relevant information to help us generate an accurate quote.
   </p>
 
   <div className="mt-6 flex items-center bg-blue-100 p-3 rounded-lg">
@@ -115,39 +116,7 @@ export default function Pricing() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-900 text-white py-12">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
-          <div>
-            <h4 className="text-xl font-semibold">TechElevate</h4>
-            <p className="mt-2">Providing top-notch IT solutions for businesses worldwide.</p>
-            <div className="mt-4 flex space-x-4">
-              <a href="#"><i className="fab fa-facebook-f text-xl"></i></a>
-              <a href="#"><i className="fab fa-twitter text-xl"></i></a>
-              <a href="#"><i className="fab fa-linkedin text-xl"></i></a>
-              <a href="#"><i className="fab fa-instagram text-xl"></i></a>
-            </div>
-          </div>
-          <div>
-            <h4 className="text-xl font-semibold">Quick Links</h4>
-            <ul className="mt-2 space-y-2">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/about" className="hover:underline">About Us</a></li>
-              <li><a href="/services" className="hover:underline">Services</a></li>
-              <li><a href="/pricing" className="hover:underline">Pricing</a></li>
-              <li><a href="/contact" className="hover:underline">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-xl font-semibold">Get in Touch</h4>
-            <p className="mt-2">123 Street, New York, USA</p>
-            <p className="mt-2">support@techelevate.com</p>
-            <p className="mt-2">+91 1234567890</p>
-          </div>
-        </div>
-        <div className="text-center mt-8 border-t border-gray-600 pt-6">
-          <p>© 2025 TechElevate. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }
