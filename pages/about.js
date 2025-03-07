@@ -1,6 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Head from "next/head";
+const partners = [
+  { name: "Hairwayon", image: "/partner/Hairwayon.png" },
+  { name: "Cradel Wing", image: "/partner/cradel-wing.png" },
+  // { name: "Konkan Specials", image: "/partner/konkan_specials.png" }
+];
 
 export default function About() {
   return (
@@ -114,9 +119,9 @@ export default function About() {
           <h3 className="text-3xl font-bold">Meet Our Team.</h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Addhitya S", role: "Developer", img: "/images/aditya.jpeg" },
-              { name: "Pavan Naik", role: "Developer", img: "/images/pavan.jpg" },
-              { name: "Shashwat", role: "Developer", img: "/images/shashwat.png" },
+              { name: "Addhitya S", role: "MERN Developer", img: "/images/aditya.jpeg" },
+              { name: "Pavan Naik", role: "Application Developer", img: "/images/pavan.jpg" },
+              { name: "Shashwat", role: "Spring Boot Developer", img: "/images/shashwat.png" },
               { name: "Suprit Joshi", role: "Digital Marketing", img: "/images/suprit.png" }
             ].map((member, index) => (
               <div key={index} className="p-6 bg-white shadow-lg rounded-lg text-center">
@@ -136,17 +141,30 @@ export default function About() {
 
       {/* Partner Logos */}
       <section className="py-12 text-center">
-        <h3 className="text-3xl font-bold">Our Trusted Partners</h3>
-        <div className="flex justify-center flex-wrap gap-6 mt-6">
-          {["Hairwayon", "Cradel Wing", "Konkan Specials"].map((partner, index) => (
-            // <img key={index} src={`/${partner}.png`} alt={partner} className="h-10 grayscale hover:grayscale-0 transition"/>
-            // Add P tag
-            <p key={index} className="h-10 grayscale hover:grayscale-0 transition">
-                {partner}
-            </p>
-          ))}
-        </div>
-      </section>
+  <h3 className="text-3xl font-bold text-gray-900">Our Trusted Partners</h3>
+  <div className="flex justify-center flex-wrap gap-8 mt-6">
+    {partners.map((partner, index) => (
+      <div key={index} className="flex flex-col items-center">
+        {/* Partner Logo */}
+        <img 
+          src={partner.image} 
+          alt={partner.name} 
+          className="h-8 w-auto max-w-[150px]"
+        />
+      </div>
+      
+    ))}
+<p 
+  className="text-2xl font-extrabold tracking-wide text-gray-700 hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500 transition duration-300 font-[Caveat]"
+>
+  Konkan Specials
+</p>
+
+  </div>
+
+</section>
+
+
 
       {/* Footer */}
    <Footer/>

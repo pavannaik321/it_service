@@ -2,6 +2,14 @@ import Head from "next/head";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+const partners = [
+  { name: "Hairwayon", image: "/partner/Hairwayon.png" },
+  { name: "Cradel Wing", image: "/partner/cradel-wing.png" },
+  // { name: "Konkan Specials", image: "/partner/konkan_specials.png" }
+];
+
+
 export default function Contact() {
   return (
     <div className="bg-gray-50">
@@ -89,13 +97,28 @@ export default function Contact() {
 
       {/* Partner Logos */}
       <section className="py-12 text-center">
-        <h3 className="text-xl font-semibold">Our Trusted Partners</h3>
-        <div className="flex justify-center flex-wrap gap-6 mt-6">
-          {["google", "apple", "microsoft", "ibm", "yahoo", "dell"].map((partner, index) => (
-            <img key={index} src={`/${partner}.png`} alt={partner} className="h-10 grayscale hover:grayscale-0 transition"/>
-          ))}
-        </div>
-      </section>
+  <h3 className="text-3xl font-bold text-gray-900">Our Trusted Partners</h3>
+  <div className="flex justify-center flex-wrap gap-8 mt-6">
+    {partners.map((partner, index) => (
+      <div key={index} className="flex flex-col items-center">
+        {/* Partner Logo */}
+        <img 
+          src={partner.image} 
+          alt={partner.name} 
+          className="h-8 w-auto max-w-[150px]"
+        />
+      </div>
+      
+    ))}
+<p 
+  className="text-2xl font-extrabold tracking-wide text-gray-700 hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500 transition duration-300 font-[Caveat]"
+>
+  Konkan Specials
+</p>
+
+  </div>
+
+</section>
 
       {/* Footer */}
      <Footer/>
